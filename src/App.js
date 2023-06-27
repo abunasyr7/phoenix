@@ -51,7 +51,7 @@ function App() {
           hours={hours}
           setHours={setHours}
           title="Всего часов"
-          maxHours=""
+          maxHours={100}
         />
         <WorkDays
           selectedDays={selectedDays}
