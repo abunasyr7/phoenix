@@ -1,8 +1,9 @@
 .hours-container {
     border: 1px solid gray;
     border-radius: 5px;
-    display: inline-flex;
+    display: flex;
     margin-right: 25px;
+    max-height: 45px;
 }
 
 .hours-minus {
@@ -18,7 +19,6 @@
 
 .hours-title {
     font-size: 14px;
-    text-wrap: normal;
     width: 45px;
     margin-right: 15px;
 }

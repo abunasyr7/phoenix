@@ -34,7 +34,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginBottom: "25px",
+          alignItems: "center",
+        }}
+      >
         <Dropdown
           list={typeOfHours}
           selectedItem={selectedTypeOfHours}
@@ -69,7 +76,14 @@ function App() {
           setSelectedDays={setSelectedDays}
         />
       </div>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginBottom: "25px",
+          alignItems: "center",
+        }}
+      >
         <Dropdown
           list={typeOfBreak}
           selectedItem={breakTime}
