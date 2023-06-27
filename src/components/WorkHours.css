@@ -1,0 +1,18 @@
+.hours-container {
+    border: 1px solid grey;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.hours-time {
+    font-size: 18px;
+    color: grey;
+    padding: 10px;
+}
+
+.hours-text {
+    background-color: grey;
+    color: white;
+    padding: 12px;
+}

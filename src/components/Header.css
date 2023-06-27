@@ -1,0 +1,13 @@
+.header-box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    margin: 25px;
+}
+
+.header-box h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    color: gray;
+    margin-bottom: 10px;
+}

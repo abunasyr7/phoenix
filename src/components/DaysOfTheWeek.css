@@ -1,0 +1,19 @@
+.days-container {
+    display: inline-flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.days-container button {
+    padding: 10px;
+    border-right: 1px solid grey;
+}
+
+.days-container button.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.days-container button:last-child {
+    border-right: none;
+}

@@ -1,0 +1,31 @@
+.hours-container {
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: inline-flex;
+    margin-right: 25px;
+}
+
+.hours-minus {
+    padding: 10px 15px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 16px;
+}
+
+.hours-number {
+    padding: 10px 25px;
+}
+
+.hours-title {
+    font-size: 14px;
+    text-wrap: normal;
+    width: 45px;
+    margin-right: 15px;
+}
+
+.hours-plus {
+    padding: 10px 15px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 16px;
+}
