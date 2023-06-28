@@ -2,7 +2,7 @@ import "./Hours.css";
 
 const Hours = ({ hours, setHours, title, maxHours }) => {
   const handleButtonClick = (increase) => {
-    if (increase) {
+    if (increase && hours < maxHours) {
       setHours(hours + 1);
     } else {
       if (hours > 0) {

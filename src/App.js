@@ -9,6 +9,7 @@ import { useState } from "react";
 import WorkHours from "./components/WorkHours";
 import typeOfHours from "./store/typeOfHours";
 import typeOfBreak from "./store/typeOfBreak";
+import Button from "./components/Button";
 
 function App() {
   const [selectedTypeOfHours, setSelectedTypeOfHours] = useState(
@@ -51,7 +52,7 @@ function App() {
           hours={hours}
           setHours={setHours}
           title="Всего часов"
-          maxHours={100}
+          maxHours={365}
         />
         <WorkDays
           selectedDays={selectedDays}
@@ -93,7 +94,7 @@ function App() {
           hours={hoursPerDay}
           setHours={setHoursPerDay}
           title="Часов в день"
-          maxHours={hours}
+          maxHours={Math.floor(hours/selectedDays.length)}
         />
         <WorkHours
           typeOfHours={selectedTypeOfHours}
@@ -101,7 +102,7 @@ function App() {
           hoursPerDay={hoursPerDay}
         />
       </div>
-      <button onClick={() => console.log(obj)}>Добавить расписание</button>
+      <Button title="Добавить расписание" onClickEvent={() => console.log(obj)} />
     </div>
   );
 }
